@@ -13,12 +13,12 @@ export function Rotas() {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage/>}/>
-          <Route path="/login" element={<LoginPage/>}/>
-          <Route path="/register" element={<RegisterPage/>}/>
-          <Route path="/recovery" element={<RecoveryPass/>}/>
-          <Route path="/home" element={<Home/>} />
-          <Route path="/play/:movie" element={<Play/>}/>
+          <Route exact path="/" element={<HomePage/>}/>
+          <Route exact path="/login" element={<LoginPage/>}/>
+          <Route exact path="/register" element={<RegisterPage/>}/>
+          <Route exact path="/recovery" element={<RecoveryPass/>}/>
+          <Route exact path="/home" element={<Home/>} />
+          <Route exact path="/play/:movie" element={<Play/>}/>
           <Route path='*' element={<NotFound/>} />
         </Routes>
       </BrowserRouter>
